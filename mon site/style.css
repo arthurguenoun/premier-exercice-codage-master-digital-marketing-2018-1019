@@ -1,0 +1,244 @@
+body{
+	font-family: "New Century Schoolbook", TeX Gyre Schola, serif;
+	font-size: 15px;
+	margin: 0px;
+	padding: 0px;
+	text-align: justify;
+	}
+
+/*banière*/
+.banner {
+  width: 100%;
+  height: 250px
+}
+
+.banner img {
+  height :100%;
+  width: 100%;
+}
+/*titres + hypertexte*/
+a{
+	text-decoration: none; 
+	color: #de36b0;
+}
+h1{
+	font-family : "Trebuchet MS", sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	
+}
+h2{
+	font-family : "Trebuchet MS", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin : 10px 0px;
+}
+h3{ 
+	font-family : "Trebuchet MS", sans-serif;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+	margin : 10px 0px;
+}
+	/* barre de navigation */ 
+nav{
+	width: 100%;
+	background-color: #A9AEBF;
+}
+nav ul{
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+nav li {
+	list-style-type: none;
+	float: left;	
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px 15px;
+	color:#fff;
+}
+/* couleurs et positions des liens */
+.menu-index:hover{
+	border-top: 5px solid #de36b0;
+	background-color: RGBa(223, 189, 209,0.40);
+}
+.menu-Cuisines:hover{
+	border-top: 5px solid #FF7F50;
+	background-color: RGBa(255, 127, 80,0.40);
+}
+.menu-Sallesdebain:hover{
+	border-top: 5px solid #3C7AB3;
+	background-color: RGBa(60, 122, 179,0.40);
+}
+nav li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+
+.table{
+	display: table;
+	margin: 0 auto;
+}
+/*PAGE 1, ACCUEIL*/	
+/* Page divisé en 3 colonnes, choix personnel pour plus "d'actions" différentes par page sans choquer*/
+#colonnes{
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	margin-bottom : 15px;  
+}
+/*colonne gauche */
+#gauche{
+	float: left;
+    width: 25%;
+	margin: 0px 50px 0px 20px;
+}
+.marion {
+width:130px;
+height:130px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.azimut{
+width: 275px;
+height : 110px;
+display : block;
+margin-left : auto;
+margin-right: auto;	
+}
+/* colonne centrale*/
+#centre{
+	float: left;
+    width: 50%;
+	margin-left : 10px;
+	margin-right: 0px;
+}
+/*caroussel*/
+@keyframes slidy {  
+		0% 	{ left: 0%; }
+		20% { left: 0%; }
+		25% { left: -100%; }
+		45% { left: -100%; }
+		50% { left: -200%; }
+		70% { left: -200%; }
+		75% { left: -300%; }
+		95% { left: -300%; }
+		100% { left: -400%; }
+}
+
+#caroussel { 
+overflow: hidden; 
+}
+#caroussel figure img { 
+width: 20%; float: left; 
+}
+#caroussel figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 45s slidy infinite; 
+}
+
+/*colonne de droite*/
+#droite{
+	float: left;
+	width: 25%;
+	margin : 0px 20px 0px 50px;
+	padding-top : 5%;
+}
+/*liste*/
+aside {
+    float: left;
+    background-color: #fffff;
+    margin-left: 12%;
+    width: 90%;
+    height: 200px;
+    overflow: auto;
+	margin-bottom: 10%;
+}
+/*petit formulaire*/
+#formulaire {
+	float: left;
+	margin-top :30px;
+	width: 90%;
+	margin-left: 12%;
+	background-color: RGBa(223, 189, 209,0.40);
+	
+}
+.date{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #de36b0;
+}
+/* PAGE 2, Les cuisines*/
+#centre1{
+	float: left;
+    width: 60%;
+	margin-left : 10px;
+	margin-right: 3%;
+}
+
+#gauche1{
+	float: left;
+    width: 40%;
+	margin: 0px 10px 0px 00px;
+}
+/*pour zoomer sur les photos */
+.pic{
+	width :100%;
+}
+.picbig{
+	position: absolute;
+	width:0px;
+	-webkit-transition: width 0.3s linear 0s;
+	transition: width 0.3s linear 0s;
+	z-index:10;
+}
+.pic:hover + .picbig {
+	width:400px;
+	}
+/*3ème page */
+
+#colonnes1{
+	display: flex;
+	flex-direction: row;
+	width: auto;
+}
+#centre2{
+	float: left;
+    width: 75%;
+	margin-bottom:3%;
+}
+
+#gauche2{
+	float: left;
+    width: 1%;
+
+}
+#droite1{
+	float: left;
+	width: 24%;
+	margin-left : 2%;
+}
+
+/*footer*/
+#colorfooter {
+	color : #ffffff; 
+	font-size: 15px;
+}
+footer {
+		height : 90px;
+		border-top : 1px solid #61616C;
+		background-color : #A9AEBF;
+		text-align : center;
+}
